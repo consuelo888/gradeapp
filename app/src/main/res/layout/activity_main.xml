@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="DAFTAR NILAI"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="MataKuliah: Mobile Programming"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="ublLogo"
+        android:src="@drawable/ubl" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="UNIVERSITAS BUDI LUHUR-2024/2025"
+        android:textSize="14sp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Semester:"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radio_Gasal"
+            android:layout_width="79dp"
+            android:layout_height="wrap_content"
+            android:text="Gasal" />
+
+        <RadioButton
+            android:id="@+id/radio_Genap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Genap" />
+
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/Nim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Input NIM"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/Nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Input Nama Lengkap"
+        android:inputType="text" />
+
+
+    <TextView
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Nilai:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/Presensi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Presensi"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/Tugas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Tugas"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/UTS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="UTS"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/UAS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="UAS"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonHitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung Nilai Akhir" />
+
+</LinearLayout>
